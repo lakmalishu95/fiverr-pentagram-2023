@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MovieHunter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-func.js"></script>
+
+
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #f50909;
+  }
+  
+  .active {
+    background-color: #020101;
+  }
+
+  </style>
+
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+
+<div id="shell">
+  <div id="header">
+    
+    <ul>
+      <li style="font-size: large;"><a class="active" href="#home"><img style="width: 150px;height: 70px;" src="css/images/logo192.png" alt=""></a></li>
+     
+      <li style="margin-top: 0.3% ; margin-left: 2%; font-size: large;"><a href="index.html"> <b>Browse</b></a></li>
+      <li style="margin-top: 0.3% ; margin-left: 2%; font-size: large;"><a href="videos.html"><b>Favorite</b></a></li>
+      <li style="float:right">
+      </li>
+    </ul> 
+  </div>
+  <div id="main">
+    <div id="content">
+      <div id="my-video">
+         <iframe id="videoPlayer" style="padding-top: 100px;" width="100%" height="650px" src="" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+      </div>
+         <!-- <iframe style="padding-top: 100px;" width="100%" height="650px" src="" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe> -->
+        
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <p class="rf">Design by kevinkrish95</a></p>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+
+<script>
+// Get all the image elements with the "video-link" class
+//const images = document.querySelectorAll(".video-link");
+
+// Loop through the images and add a click event listener to each one
+//images.forEach(image => {
+ // image.addEventListener("click", function() {
+    // Get the URL of the video from the "data-url" attribute
+ //   const videoUrl = this.dataset.url;
+    // Redirect the browser to the video URL
+ //   window.location.href = videoUrl;
+ // });
+//});
+
+function playVideo() {
+  // Define the URL of your custom HTML page
+  const pageUrl = "path/to/your/custom/page.html";
+
+  // Open a new window and get a reference to its document object
+  const newWindow = window.open(pageUrl);
+
+  // Wait for the new window to finish loading
+  newWindow.addEventListener("load", function() {
+    // Get a reference to the new window's document object
+    const newDoc = newWindow.document;
+
+    // Define the video embed code
+    const embedCode = '<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
+    // Insert the video embed code into the new document
+    const videoContainer = newDoc.getElementById("my-video");
+    videoContainer.innerHTML = embedCode;
+  });
+}
+
+$(document).ready(function() {
+  var videoUrl = localStorage.getItem('videoUrl');
+
+  var videoId = videoUrl.substring(videoUrl.lastIndexOf('/') + 1);
+
+  var embedUrl;
+  
+  if(videoUrl.includes('youtube')) {
+    embedUrl = 'https://www.youtube.com/embed/' + videoId;
+  } else if(videoUrl.includes('archive')) {
+    embedUrl = 'https://www.archive.org/embed/' + videoId;
+  } else if(videoUrl.includes('bilibili')) {
+    embedUrl = 'https://www.bilibili.tv/en/video/' + videoId;
+  }
+
+  $('#videoPlayer').attr('src', embedUrl)  
+})
+
+</script>
+
+<!-- END PAGE SOURCE -->
+</body>
+</html>

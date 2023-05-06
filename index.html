@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MovieHunter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-func.js"></script>
+
+
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00000000;
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #f50909;
+  }
+  
+  .active {
+    background-color: #020101;
+  }
+
+  </style>
+
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PT9X55H" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+<div id="shell">
+  <div id="header" style="background-image:url('css/images/88.png'); width:1550px; height:800px; background-repeat: no-repeat; "> 
+    <ul>
+      <li style="font-size: large;">
+        <a class="active" href="index.html">
+          <img style="width: 150px;height: 150px; padding-left:25px;" src="css/images/logo192.png" alt="">
+        </a>
+      </li>  
+      <li style="margin-top: 0.3% ; margin-left: 2%; font-size: large;"><a href="index.html"> <b>Browse</b></a></li>
+      <li style="margin-top: 0.3% ; margin-left: 2%; font-size: large;"><a href="videos.html"><b>Favorite</b></a></li>
+      <li style="float:right">
+      </li>
+    </ul>
+    
+    
+  
+  </div>
+  <div id="main">
+    <div id="content">
+      <div class="box">
+        <div class="head">
+          <h2>TRENDING</h2>
+          <p class="text-right"><a href="#">.</a></p>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play"><span class="name">Edward Scissorhands</span></span> 
+            <a href="https://archive.org/details/edward-scissorhands-dvdrip-latino"><img src="css/images/Trending/e0FqKFvGPdQNWG8tF9cZBtev9Em.jpg" alt="" /></a> 
+          </div>      
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play"><span class="name">Eyes Wide Shut</span></span> 
+            <a href="https://archive.org/details/eyes-wide-shut-1"><img src="css/images/Trending/eyeswideshutdvd.png" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play"><span class="name">Arbitrage</span></span> 
+            <a href="https://www.youtube.com/embed/UmJSV9ePx7c"><img src="css/images/Trending/s-l1600.jpg" class="video-link" data-url="https://www.example.com/video1.html" alt="" /></a> 
+          </div>  
+        </div>
+        <div class="movie">
+          <div class="movie-image" id="myImage">
+            <span class="play">
+              <span class="name">Scream VI</span>
+            </span> 
+              <a href="https://www.bilibili.tv/en/video/4786932086740480?bstar_from=bstar-web.ugc-video-detail.related-recommend.all"><img src="css/images/Trending/scream.jpg" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play"><span class="name">Fellowship of the Ring</span></span> 
+            <a href="https://www.bilibili.tv/en/video/2042649928?bstar_from=bstar-web.homepage.recommend.all"><img src="css/images/Trending/LOTR-Fellowship-Of-The-Ring-poster-1.jpg" class="video-link" data-url="https://www.example.com/video1.html" alt="" /></a>
+          </div>
+        </div>
+        <div class="cl">&nbsp;</div>
+      </div>
+      <div class="box">
+        <div class="head">
+          <h2>ACTION</h2>
+          <p class="text-right"><a href="#">.</a></p>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play"><span class="name">Once Upon a Time in America</span></span> 
+            <a href="https://archive.org/details/8.3-8.6-once-upon-a-time-in-america-1984"><img src="css/images/Action/410FKSV8XGL._AC_UF894,1000_QL80_.jpg" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play"><span class="name">I.T</span></span> 
+            <a href="https://www.youtube.com/watch?v=2FYnwShQH7g"><img src="css/images/Action/MV5BYjg1YTRkNzQtODgyYi00MTQ5LThiMDYtNDJjMWRjNTdjZDZlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play"><span class="name">Last Knights</span></span> 
+            <a href="https://www.youtube.com/watch?v=Sum4V-3ZbWM"><img src="css/images/Action/d85a92217efb49a6b85bbac9858d3864844c130d1dd34da2f66e2db16a3f1ae6._RI_V_TTW_.jpg" alt="" /></a> 
+          </div>  
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play"><span class="name">The Eagle Has Landed</span></span> 
+            <a href="https://www.youtube.com/watch?v=URpHAroD9FA"><img src="css/images/Action/MV5BMTQxNzEyNzAyM15BMl5BanBnXkFtZTcwNDg5ODU0MQ@@._V1_.jpg" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play"><span class="name">The Patriot</span></span> 
+            <a href="https://www.bilibili.tv/en/video/2001641809?bstar_from=bstar-web.homepage.recommend.all"><img src="css/images/Action/fWZd815QxUCUcrWQZwUkAp9ljG.jpg" alt="" /></a> 
+          </div> 
+        </div>
+
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play"><span class="name">Seven</span></span> 
+            <a href="https://www.bilibili.tv/en/video/2001772678?bstar_from=bstar-web.ugc-video-detail.related-recommend.all"><img src="css/images/Action/MV5BZDgyZmY5MmItY2I3Ny00NjA4LWFhNmItMGQ4ZGJhZDk5YjU3XkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_.jpg" alt="" /></a> 
+          </div>        
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play"><span class="name">Father Stu</span></span> 
+            <a href="https://www.bilibili.tv/en/video/2040137590?bstar_from=bstar-web.ugc-video-detail.related-recommend.all"><img src="css/images/Action/Screen-Shot-2022-12-05-at-9.05.20-AM-768x1150.png" alt="" /></a> 
+          </div>
+        </div>
+        <div class="cl">&nbsp;</div>
+      </div>
+      <div class="box">
+        <div class="head">
+          <h2>COMEDY</h2>
+          <p class="text-right"><a href="#">.</a></p>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">50 First Dates</span>
+            </span> <a href="https://archive.org/embed/adam-s.-comedy_20201027"><img src="css/images/Comedy/50FirstDates.jpg" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Wedding Crashers</span>
+            </span> <a href="https://www.bilibili.tv/en/video/2007213069?bstar_from=bstar-web.homepage.recommend.all"><img src="css/images/Comedy/91pLEWZcMGL._AC_UF894,1000_QL80_.jpg" alt="" /></a> 
+          </div>        
+        </div>
+        <div class="movie">
+          <div class="movie-image">
+            <span class="play">
+              <span class="name">2Guns</span>
+            </span> <a href="https://www.bilibili.tv/en/video/2008778106?bstar_from=bstar-web.homepage.recommend.all"><img src="css/images/Comedy/unnamed.jpg" alt="" /></a> 
+          </div>          
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Once Upon a Time in Hollywood</span>
+            </span> <a href="https://www.bilibili.tv/en/video/2000044068?bstar_from=bstar-web.homepage.recommend.all"><img src="css/images/Comedy/MV5BOTI5YzA0OWItMmQyOC00OTdhLWI0NjctNWFiYmRlY2YwMDZlXkEyXkFqcGdeQXVyMTA3MzQ4MTcw._V1_FMjpg_UX1000_.jpg" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Bridesmaids</span>
+            </span> <a href="https://www.bilibili.tv/en/video/2046770542?bstar_from=bstar-web.homepage.recommend.all"><img src="css/images/Comedy/81OS++NlysL._AC_UF894,1000_QL80_.jpg" alt="" /></a> 
+          </div>
+        </div>
+
+        <div class="cl">&nbsp;</div>
+      </div>
+      <div class="box">
+        <div class="head">
+          <h2>Sci-Fi greats</h2>
+          <p class="text-right"><a href="#">.</a></p>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Edward Scissorhands</span>
+            </span> <a href="https://archive.org/details/edward-scissorhands-dvdrip-latino"><img src="css/images/Sci-Fi/104-154192_Actual.webp" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Automata</span>
+            </span> 
+            <a href="https://www.youtube.com/embed/AdxL9r3Wx_g"><img src="css/images/Sci-Fi/MV5BNzgyMDcyMjMwMV5BMl5BanBnXkFtZTgwNjY5MTA1MjE@._V1_.jpg" alt="" /></a> 
+          </div>     
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Fellowship of the Ring</span>
+            </span> <a href="https://www.bilibili.tv/en/video/2042649928?bstar_from=bstar-web.homepage.recommend.all"><img src="css/images/Sci-Fi/61215351 (1).jpg" alt="" /></a> 
+          </div>        
+        </div>
+        <div class="movie">
+          <div class="movie-image">
+            <span class="play">
+              <span class="name">The Two Towers</span>
+            </span> <a href="https://www.bilibili.tv/en/video/2002662969?bstar_from=bstar-web.ugc-video-detail.related-recommend.all"><img src="css/images/Sci-Fi/7b77691c82665669e6973525679d20a2.jpg" alt="" /></a> 
+          </div>          
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Return of the King</span>
+            </span> <a href="https://www.bilibili.tv/en/video/2003868483?bstar_from=bstar-web.ugc-video-detail.related-recommend.all"><img src="css/images/Sci-Fi/61215384.jpg" alt="" /></a> 
+          </div>
+        </div>  
+        <div class="cl">&nbsp;</div>
+      </div>
+      <div class="box">
+        <div class="head">
+          <h2>DRAMA</h2>
+          <p class="text-right"><a href="#">.</a></p>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Arbitrage</span>
+            </span> <a href="https://www.youtube.com/watch?v=C2pmV5SRalE"><img src="css/images/Drama/p9005432_p_v12_be.jpg" alt="" /></a> 
+          </div>        
+        </div>
+        <div class="movie">
+          <div class="movie-image">
+            <span class="play">
+              <span class="name">Schindler’s List</span>
+            </span> <a href="https://archive.org/details/Popcornarchive-schindlersList1993_azz2p"><img src="css/images/Drama/p15227_p_v13_be.jpg" alt="" /></a> 
+          </div>          
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Waterland</span>
+            </span> <a href="https://www.youtube.com/embed/yOniFl3p8Rs  "><img src="css/images/Drama/wTgDzq2qjjr3t7TRnnlQYv8PXSI.jpg" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Eyes Wide Shut</span>
+            </span> <a href="https://archive.org/details/eyes-wide-shut-1"><img src="css/images/Drama/MV5BYzMzZjcyNzEtZjE2OC00Yjk3LWExOGItODdhNzhkZTdmM2M0XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Devotion</span>
+            </span> 
+            <a href="https://www.bilibili.tv/en/video/2047599715?bstar_from=bstar-web.homepage.recommend.all"><img src="css/images/Drama/81QEq-WxuiL.jpg" alt="" /></a> 
+          </div>     
+        </div>
+        <div class="cl">&nbsp;</div>
+      </div>
+      <div class="box">
+        <div class="head">
+          <h2>Documentaries</h2>
+          <p class="text-right"><a href="#">.</a></p>
+        </div>
+
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Endgame</span>
+            </span> <a href="https://www.youtube.com/embed/x-CrNlilZho"><img src="css/images/Documentery/download.jpg" alt="" /></a> 
+          </div>        
+        </div>
+        <div class="movie" >
+          <div class="movie-image">
+            <span class="play">
+              <span class="name">Panic: The Untold Truth of the 2008 Financial Crisis</span>
+            </span> <a href="https://www.youtube.com/embed/QozGSS7QY_U"><img src="css/images/Documentery/panic-the-untold-story-of-the-2008-financial-crisis.download" alt="" /></a> 
+          </div>          
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">After Rome – The War for Britain</span>
+            </span> <a href="https://www.youtube.com/embed/sXBgNNtEJ6M"><img src="css/images/Documentery/51wr1RIOGSL._AC_UF894,1000_QL80_.jpg" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Inside the CIA</span>
+            </span> <a href="https://www.youtube.com/embed/EYrznlDTE_M"><img src="css/images/Documentery/v640493kwy9.jpg" alt="" /></a> 
+          </div>
+        </div>
+        <div class="movie" onclick="openNewTab(emb = '')">
+          <div class="movie-image"> 
+            <span class="play">
+              <span class="name">Hollywoodism</span>
+            </span> <a href="https://archive.org/embed/HollywoodismJewsMoviesAndTheAmericanDream1998MP4Roflcopter2110WWRG"><img src="css/images/Documentery/61pFj7+0bVL._AC_SL1088_.jpg" alt="" /></a> 
+          </div>     
+        </div>
+        <div class="cl">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p class="rf">Design by kevinkrish95</a></p>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+
+<script>
+ function openNewTab(){
+  const pageUrl = "videos.html";
+
+  // Open a new window and get a reference to its document object
+  const newWindow = window.open(pageUrl);
+
+  // Wait for the new window to finish loading
+  newWindow.addEventListener("load", function() {
+    // Get a reference to the new window's document object
+    const newDoc = newWindow.document;
+
+    // Define the video embed code
+    const embedCode = '<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
+    // Insert the video embed code into the new document
+    const videoContainer = newDoc.getElementById("content");
+    videoContainer.innerHTML = embedCode;
+  });
+ }
+
+ $(document).ready(function()  {
+  $('.movie').click(function () {
+    var videoUrl = $('a', this).attr('href');
+    localStorage.setItem('videoUrl', videoUrl);
+    window.location.href = 'videos.html';
+  })
+ })
+
+
+</script>
+
+<!-- END PAGE SOURCE -->
+</body>
+</html>
